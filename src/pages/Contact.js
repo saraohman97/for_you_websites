@@ -7,7 +7,7 @@ const Contact = () => {
     <div className='mt-32 flex justify-end items-center flex-row gap-10'>
       <div className='flex flex-col gap-8 w-80'>
         <h3 className='font_serif_caption text-[30px]'>VÄSTERÅS</h3>
-        <p>For you websites har kontor i Västerås city i mittersta Sverige. Du når oss på kontoret, telefon eller mail. Också, följ gärna våra sociala medier. </p>
+        <p>For you websites har kontor i Västerås city i mittersta Sverige. Du når oss på kontoret, telefon eller mail. Följ gärna våra sociala medier. </p>
         <p>Telefon: 070 493 73 54</p>
         <p>Email: foryouwebsites@gmail.com</p>
         <div className='flex gap-4'>

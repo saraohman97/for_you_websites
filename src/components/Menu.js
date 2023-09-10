@@ -5,9 +5,9 @@ import { AiFillGithub } from 'react-icons/ai'
 import { AiOutlineClose } from 'react-icons/ai'
 import Button from './Button'
 
-const Menu = ({ toggleMenu }) => {
+const Menu = ({ toggleMenu, openMenu }) => {
   return (
-    <div className='bg-white fixed z-40 top-0 right-0 left-0'>
+    <div className={`bg-white fixed z-40 right-0 left-0 ${openMenu ? 'top-0 transition-all ease-in-out duration-500' : '-top-[100%] transition-all ease-in-out duration-500'}`}>
       {/* NAVBAR */}
       <div className='flex justify-between items-center px-8 py-4 pr-16'>
         <div className='flex items-center gap-14'>
@@ -20,7 +20,11 @@ const Menu = ({ toggleMenu }) => {
       {/* MENU CONTENT */}
       <div className='px-52 py-20 flex flex-row shadow'>
         <div className='flex flex-col flex-1 gap-2'>
-          a links
+          <div>Portfolio</div>
+          <p>a-link</p>
+          <p>a-link</p>
+          <p>a-link</p>
+          <p>a-link</p>
           <div className='flex gap-4'>
             <FaLinkedinIn size={24} />
             <AiFillGithub size={24} />

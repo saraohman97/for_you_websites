@@ -5,7 +5,7 @@ const Post = () => {
     return (
         <div className='bg-white flex flex-col rounded-[10px] p-10'>
             <h1 className='font-serif italic text-[80px] uppercase'>THIS IS THE HEADING</h1>
-            <small className='font-serif text-gray-600 text-end'>10 september, 2023</small>
+            <p className='font-serif text-gray-600 text-end'>10 september, 2023</p>
 
             <img src={image} alt="artikel bild" className='h-80 object-cover my-10' />
 

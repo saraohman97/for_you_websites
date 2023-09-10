@@ -15,13 +15,10 @@ const Navbar = () => {
     }
 
     const changeBackground = () => {
-        if(window.scrollY >= 40) {
-            setNavbar(true)
-        } else {
-            setNavbar(false)
-        }
+        window.scrollY >= 40
+            ? setNavbar(true)
+            : setNavbar(false)
     }
-
     window.addEventListener('scroll', changeBackground)
 
     return (
@@ -34,7 +31,8 @@ const Navbar = () => {
                 <Button text='Kontakta oss' link='kontakt' />
             </div>
 
-            {openMenu && <Menu toggleMenu={toggleMenu} />}
+            {/* {openMenu && <Menu toggleMenu={toggleMenu} openMenu={openMenu} />} */}
+            <Menu toggleMenu={toggleMenu} openMenu={openMenu} />
         </>
     )
 }
