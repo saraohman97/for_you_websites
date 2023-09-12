@@ -7,6 +7,7 @@ import QA from './pages/QA';
 import Contact from './pages/Contact';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
+import ScrollToTop from './components/ScrollToTop';
 
 function App() {
   return (
@@ -22,6 +23,9 @@ function App() {
       </Routes>
 
       <Footer />
+
+      {/* IF NEW PATHNAME, SCROLL TO TOP */}
+      <ScrollToTop />
     </div>
   );
 }
