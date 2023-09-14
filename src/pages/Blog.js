@@ -3,23 +3,27 @@ import bg_video from '../images/header.mp4'
 import { RiSearchLine } from 'react-icons/ri'
 import Post from '../components/Post'
 import image from '../images/image.png'
+import Navbar from '../components/Navbar'
+import Footer from '../components/Footer'
 
 const Blog = () => {
   return (
+    <>
+    <Navbar />
     <div className='flex flex-row justify-around gap-10 p-10 mt-20 bg-gray-100 items-start'>
       {/* SIDEBAR */}
       <div className='flex flex-col gap-10'>
         <div className='bg-white flex flex-col rounded-[10px] w-80'>
           {/* top */}
           <div className='flex flex-row items-center gap-4 px-8 py-4'>
-            <video
-              src={bg_video}
-              className='h-20 w-20 rounded-full'
-              autoPlay
-              loop
-              muted
-              type="video/mp4"
-            />
+              <video
+                src={bg_video}
+                className='object-cover object-center w-20 h-20 rounded-full'
+                autoPlay
+                loop
+                muted
+                type="video/mp4"
+              />
 
             <h3 className='font_serif text-[25px]'>NYHETER</h3>
           </div>
@@ -73,6 +77,8 @@ const Blog = () => {
         <Post />
       </div>
     </div>
+    <Footer />
+    </>
   )
 }
 

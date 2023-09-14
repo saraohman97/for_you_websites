@@ -7,6 +7,7 @@
 html, body {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 400;
+    scroll-behavior: smooth;
 }
 .font_serif {
     font-family: 'PT Serif', serif;
@@ -15,4 +16,12 @@ html, body {
     font-family: 'PT Serif Caption', serif;
 }
 
-
+.brown {
+    color: #482525;
+}
+.b-brown {
+    border-color: #482525;
+}
+.bg-brown {
+    background-color: #482525;
+}

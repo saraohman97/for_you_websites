@@ -14,24 +14,23 @@ const Navbar = () => {
             : setOpenMenu(true)
     }
 
-    const changeBackground = () => {
-        window.scrollY >= 40
+    const changeNavbar = () => {
+        window.scrollY >= 10
             ? setNavbar(true)
             : setNavbar(false)
     }
-    window.addEventListener('scroll', changeBackground)
+    window.addEventListener('scroll', changeNavbar)
 
     return (
         <>
             <div className={`fixed top-0 right-0 left-0 z-40 flex justify-between items-center px-8 py-4 pr-16 ${navbar ? 'bg-white shadow' : 'bg-transparent'}`}>
-                <div className='flex items-center gap-14'>
+                <div className='flex items-center md:gap-14 gap-8'>
                     <FiMenu size={30} onClick={toggleMenu} className='cursor-pointer' />
-                    <Link to='/' className='text-[35px] font_serif font-bold cursor-pointer'>FOR YOU</Link>
+                    <Link to='/' onClick={() => window.scrollTo(0, 0)} className='md:text-[35px] text-[25px] font_serif font-bold cursor-pointer'>FOR YOU</Link>
                 </div>
-                <Button text='Kontakta oss' link='kontakt' />
+                <Button text='Kontakta oss' link='kontakt' className='max-sm:hidden' />
             </div>
 
-            {/* {openMenu && <Menu toggleMenu={toggleMenu} openMenu={openMenu} />} */}
             <Menu toggleMenu={toggleMenu} openMenu={openMenu} />
         </>
     )

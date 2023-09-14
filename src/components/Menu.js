@@ -25,17 +25,17 @@ const Menu = ({ toggleMenu, openMenu }) => {
           <p>a-link</p>
           <p>a-link</p>
           <p>a-link</p>
-          <div className='flex gap-4'>
+          <div className='flex gap-4 mt-8'>
             <FaLinkedinIn size={24} />
             <AiFillGithub size={24} />
           </div>
         </div>
 
         <div className='flex flex-col flex-1 gap-2'>
-          <Link to='/pris' onClick={toggleMenu} className='p-2'>Prislista</Link>
-          <Link to='/blogg' onClick={toggleMenu} className='p-2'>Blogg</Link>
-          <Link to='/kontakt' onClick={toggleMenu} className='p-2'>Kontakta Oss</Link>
-          <Link to='/Q&A' onClick={toggleMenu} className='p-2'>Q & A</Link>
+          <Link to='/pris' onClick={toggleMenu} className='p-2 border-b-2 border-transparent hover:border-red-600 w-32'>Prislista</Link>
+          <Link to='/blogg' onClick={toggleMenu} className='p-2 border-b-2 border-transparent hover:border-red-600 w-32'>Blogg</Link>
+          <Link to='/kontakt' onClick={toggleMenu} className='p-2 border-b-2 border-transparent hover:border-red-600 w-32'>Kontakta Oss</Link>
+          <Link to='/Q&A' onClick={toggleMenu} className='p-2 border-b-2 border-transparent hover:border-red-600 w-32'>Q & A</Link>
         </div>
       </div>
     </div>
