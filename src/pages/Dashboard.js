@@ -5,21 +5,19 @@ import { getDownloadURL, ref, uploadBytesResumable } from '@firebase/storage'
 import { db, storage } from '../firebase'
 import { useNavigate, useParams } from 'react-router-dom'
 import { toast } from 'react-toastify'
+import moment from 'moment'
 
 const Dashboard = () => {
   const [picked, setPicked] = useState('chart')
   // ['chart', 'blog', 'customers']
 
   const navigate = useNavigate()
-  const date = new Date()
   const [error, setError] = useState(false)
   const [form, setForm] = useState({
     heading: "",
     text: "",
     favorite: false,
-    dDate: date.getDate(),
-    dMonth: date.getMonth(),
-    dYear: date.getFullYear(),
+    date: moment().format('LL').toString()
   })
 
   //Upload file to storage

@@ -101,10 +101,10 @@ const Blog = ({sQuery}) => {
 
           {/* posts */}
           {posts && posts
-          // .sort((a, b) => a.timestamp.valueOf('timestamp') - b.timestamp.valueOf('timestamp'))
-          // .filter((post) => post.title.toLowerCase().includes(sQuery))
           .map(post => (
             <Post key={post.id} post={post} />
+          // .sort((a, b) => a.timestamp.valueOf('timestamp') - b.timestamp.valueOf('timestamp'))
+          // .filter((post) => post.title.toLowerCase().includes(sQuery))
           ))}
         </div>
       </div>
